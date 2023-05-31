@@ -1,8 +1,47 @@
-# DEB: Dennis's Epic Builder
+# DEB
 
-name suggested by may <3
+next gen worldedit inspired modern building tools
+
+todo: better name
 
 ## Plans
+
+### Commands
+
+- `//op`
+  - `//op cancel`
+    cancel an operation
+  - `//op list`
+    list currently running operations
+    
+    chat message has clickable commands to cancel the operation and teleport to player or the operation's location (if any)
+    
+    hover event for detailed info (type: fill region: box, coords, player, etc)
+  - `//op show`
+
+
+    show the progress of an operation
+    in either bossbar or actionbar,
+    flags to show it globally (all players) or a group
+    todo
+  - `//op pause`
+    pause any running operations
+  - `//op confirm`
+    confirm the operation if there was any collisions detected with other ops
+  - `//op history`
+    show a history of all operations, one or many players, cancelled or successful ops included.
+    
+    click events for tp, undo, redo, etc
+    
+    hover events for detailed info, time etc also included
+
+    
+### Regions
+
+should work similar to worldedit with some additions, inspired from photo editing software xd:
+
+- inverting selection
+- spherical selection with angles?- select with a filter
 
 ### Patterns
 
@@ -17,13 +56,19 @@ Patterns can be:
   - checkerboard pattern
 
     To implement this, we'll probably have a pattern editor of some sorts that can toggle certain flags:
-    - repeat (xyz)
-    - size
-    - scaling
+   - repeat (xyz)
+   - size
+   - scaling
 
   - gradient (hermitcraft style xd)
 
 Multi-block patterns should have quick access to reroll
+
+### Ignore-Areas
+
+Ignore areas are regions you can save to a collection that ignores any operation's block placement.
+
+This could be useful where you want to do certain operations without completely obliterating your already established build.
 
 ### Operations
 
